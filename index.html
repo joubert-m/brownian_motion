@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Brownian motion</title>
+		<style>
+			body { margin: 0; }
+			#overlay {
+				background-color: rgba(255, 255, 255, 0.615);
+				display: flex;
+				width: 250px;
+				height: 100px;
+				position: absolute;
+				padding: 10px;
+				top: 20px;
+				left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="module" src="/main.js"></script>
+		<div id="overlay">
+			<div>
+				<p id="sliderValue"></p>
+				<input style="width: 240px;" type="range" min="1" max="1000000" value="100000" id="slider">
+			</div>
+		</div>
+	</body>
+</html>
