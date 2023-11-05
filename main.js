@@ -46,7 +46,7 @@ const init = (particles) => {
 	geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 	geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 
-	const sprite = new THREE.TextureLoader().load('/disc.png');
+	const sprite = new THREE.TextureLoader().load('assets/disc.png');
 	sprite.colorSpace = THREE.SRGBColorSpace;
 	const material = new THREE.PointsMaterial({ vertexColors: true, size: 10, sizeAttenuation: true, map: sprite, alphaTest: 0.5, transparent: true });
 
